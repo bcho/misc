@@ -27,3 +27,7 @@
     (doseq [ns-sym to-refresh]
       (require ns-sym :reload))
     (prn (str "reloaded " to-refresh))))
+
+(defn refresh-all
+  []
+  (apply refresh (keys @dir-trackers)))
