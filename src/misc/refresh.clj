@@ -1,4 +1,4 @@
-(ns misc.refresh
+(ns refresh
   "Refresh modified ns."
   (:require [clojure.set :refer [union]]
             [ns-tracker.core :refer [ns-tracker]]))
